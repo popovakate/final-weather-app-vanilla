@@ -129,12 +129,4 @@ function getCurrentCity() {
 let button = document.querySelector("#geo-position-button");
 button.addEventListener("click", getCurrentCity);
 
-function displayTempInFarh(event) {
-  event.preventDefault();
-  celsLink.classList.remove("active");
-  farhLink.classList.add("active");
-  let temperatureElement = document.querySelector("#temparature");
-  let farhTemp = celsiusTemp * 1.8 + 32;
-  temperatureElement.innerHTML = Math.round(farhTemp);
-}
 search("Kyiv");
